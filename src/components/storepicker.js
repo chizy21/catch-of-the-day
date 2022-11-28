@@ -5,7 +5,7 @@ class StorePicker extends React.Component {
 
     myInput = React.createRef();
 
-    goTostore = (event) => {
+    goToStore = (event) => {
         // 1. Stop the form from submitting
         event.preventDefault();
         // 2. Get the text from that input
@@ -15,9 +15,9 @@ class StorePicker extends React.Component {
     }
     render() {
         return (
-            <form className="store-selector" onSubmit={this.goTostore}>
+            <form className="store-selector" onSubmit={this.goToStore}>
                 <h2>Please Enter A Store</h2>
-                <input type="text" ref={this.myInpurt} required placeholder="Store Name" defaultValue={getFunName()} />
+                <input type="text" ref={this.myInput} required placeholder="Store Name" defaultValue={getFunName()} />
                 <button type="submit">Visit Store -{'>'} </button>
             </form>
         )
