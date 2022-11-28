@@ -1,7 +1,5 @@
 import React from 'react';
 import { formatPrice } from '../helpers';
-
-
 class AddFishForm extends React.Component {
 
     nameRef = React.createRef();
